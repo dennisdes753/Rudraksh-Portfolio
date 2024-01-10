@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { ParallaxProvider } from 'react-scroll-parallax';
 import './index.css';
-import App from './App';
+import Homepage from '../src/Pages/Homepage/homepage';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+  },
+]);
 root.render(
   <React.StrictMode>
-    <App />
+    <ParallaxProvider>
+      <RouterProvider router={router} />
+    </ParallaxProvider>  
   </React.StrictMode>
 );
 

@@ -1,0 +1,27 @@
+.navbar_section{
+    width: 100%;
+    .navbar {
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        top: 60px;
+        z-index: 2;
+        border-radius: 10px !important;
+        background: rgba(255, 255, 255, 0.40) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px);
+        -moz-backdrop-filter: blur(20px);
+        -o-backdrop-filter: blur(20px);
+        .resume_upload {
+            .button_resume {
+                border: 1px solid #0E0E0E;
+                color: #0E0E0E;
+                &:hover{
+                    border: 1px solid #0E0E0E;
+                    color: #0E0E0E;
+                    background: transparent;
+                }
+            }
+        }
+    }
+} 
