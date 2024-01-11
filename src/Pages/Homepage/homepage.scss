@@ -95,6 +95,7 @@
                     align-items: center;
                     color: #fff;
                     text-decoration: none;
+                    font-size: 20px;
                     transition: all 0.4s ease-in-out;
                     &.orange{
                         transition: all 0.4s ease-in-out;
@@ -185,4 +186,207 @@
             }
         }
     }    
+    .project_section{
+        width: 100%;
+        padding: 60px 0;
+        position: sticky;
+        top: 0;
+        background: #E7E7E7;
+        border-bottom: 1px solid #000;
+        z-index: 2;
+        h4{
+            font-size: 60px;
+            font-weight: 700;
+            span{
+                margin-right: 15px;
+            }
+        }
+    }
+    .verticle-line{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        border: 1px solid #000;
+        opacity: 100%;
+    }
+    .experience_descipline {
+        width: 100%;
+        display: flex;
+        gap: 100px;
+        margin: 50px 0;
+        .experience{
+            h4{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 16px;
+            }
+            a{
+                border: 1px solid #000;
+                border-radius: 10px;
+                padding: 7px;
+                color: #000;
+                text-decoration: none;
+                font-size: 16px;
+                margin-right: 20px;
+                .industy_wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    .projects_view{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        min-height: 128px;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        transition: all 0.4s ease-in-out;
+        padding: 20px;
+        position: relative;
+        .fml_project_img{
+            position: absolute;
+            content: "";
+            left: 40%;
+            top: -68px;
+            border: 11px solid #fff;
+            border-radius: 20px;
+            display: none;
+            transition: all 0.4s ease-in-out;
+            -moz-animation-name: showEffect;
+            -moz-animation-iteration-count: 1;
+            -moz-animation-timing-function: ease-in;
+            -moz-animation-duration: 2.3s;
+        
+            -webkit-animation-name: showEffect;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-timing-function: ease-in;
+            -webkit-animation-duration: 2.3s;
+        
+            animation-name: showEffect;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2.3s;
+        }
+        &:hover{
+            background: #000;
+            transition: all 0.4s ease-in-out;
+            button {
+                background: #fff;
+                border: 1px solid #fff;
+                color: #000;
+            }
+            .fml_project_img {
+                display: block;
+                transition: all 0.4s ease-in-out;
+                -moz-animation-name: showEffect;
+                -moz-animation-iteration-count: 1;
+                -moz-animation-timing-function: ease-in;
+                -moz-animation-duration: 2.3s;
+            
+                -webkit-animation-name: showEffect;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: ease-in;
+                -webkit-animation-duration: 2.3s;
+            
+                animation-name: showEffect;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: 2.3s;
+            }
+            .project_view_wrap{
+                svg{
+                    fill: #fff;
+                }
+                h4{
+                    color: #fff;
+                }
+                hr{
+                    border: 1px solid #fff;
+                }
+            }
+        }
+        button{
+            background: transparent;
+            border: 1px solid #000;
+            color: #000;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .project_view_wrap{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .horizontal-line {
+                width: 1px;
+                height: 30px;
+                border: 1px solid #000;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.tools_section{
+    width: 100%;
+    background: #E7E7E7;
+    .tools_heading{
+        width: 100%;
+        margin-bottom: 50px;
+        h4{
+            font-size: 60px;
+            font-weight: 700;
+            span{
+                margin-right: 15px;
+            }
+        }
+    }
+    .figma {
+        width: 100%;
+        background-color: #000;
+        min-height: 446px;
+        max-height: 446px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 25px 0 0;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        &.adobe{
+            background-color: #A0FFD7;
+            h4{
+                color: #F44336;
+            }
+        }
+        &.sketch {
+            background-color: #28F2FF;
+
+            h4 {
+                color: #000;
+            }
+        }
+        &.webflow {
+            background-color: #fff;
+
+            h4 {
+                color: #000;
+            }
+        }
+        h4{
+            color: #fff;
+            font-size: 35px;
+            margin-top: 30px;
+            font-weight: 700;
+        }
+    }
 }
