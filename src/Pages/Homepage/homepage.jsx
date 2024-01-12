@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import { BannerImage, ProfilePic, ProjectImage, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground } from '../../Images/img';
+import { BannerImage, ProfilePic, ProjectImage, ProjectImage2, ProjectImage3, ProjectImage4, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe } from '../../Images/img';
 import { useParallax } from 'react-scroll-parallax';
 import Header from '../Component/Header/header';
 import {NavLink} from 'react-router-dom';
@@ -11,7 +11,26 @@ const Homepage = () => {
 	const parallax = useParallax({
 		speed: -10,
 	});
-	
+
+	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const handleMouseMove = (e) => {
+		const catchMeDiv = document.querySelector('.catchme_text');
+
+		if (catchMeDiv) {
+			const rect = catchMeDiv.getBoundingClientRect();
+
+			// Calculate the maximum allowed positions for the image
+			const maxX = rect.width - 100; // Adjust based on your image width
+			const maxY = rect.height - 10; // Adjust based on your image height
+
+			// Update the mouse position only if it is within the boundaries
+			setMousePosition({
+				x: Math.min(e.clientX, maxX),
+				y: Math.min(e.clientY, maxY),
+			});
+		}
+	};
+
 	return (
 		<>
 			<section ref={parallax.ref} className="banner_sec" style={{ backgroundImage: `url(${BannerImage})` }}>
@@ -269,7 +288,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage2} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -303,7 +322,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage3} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -337,7 +356,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage4} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -499,6 +518,33 @@ const Homepage = () => {
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M194.132 0.452637L132.19 121.544H74.0085L99.9315 71.3583H98.7684C77.3823 99.1205 45.4734 117.397 0.00830078 121.544V72.0533C0.00830078 72.0533 29.0934 70.3351 46.1917 52.3588H0.00830078V0.453592H51.9135V43.1449L53.0785 43.1401L74.2891 0.453592H113.544V42.8742L114.708 42.8723L136.714 0.452637H194.132Z" fill="#146EF5" />
 								</svg>
 								<h4>Webflow</h4>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</section>
+
+			<section className="catchme">
+				<Container>
+					<Row>
+						<Col xxl="12" md="12" xs="12">
+							<div className="catchme_text" style={{ position: 'relative'}}>
+								<h4>God Create Us To Make Life Easy. </h4>
+								<div className="cursor" onMouseMove={handleMouseMove} style={{width: '100%', height: '100%' }}>
+									<NavLink to="#">
+										<Image
+											className="img-fluid cursor_img"
+											src={CatchMe}
+											alt="catch-image"
+											style={{
+												position: 'absolute',
+												left: mousePosition.x + 'px',
+												top: mousePosition.y + 'px',
+												transform: 'translate(-350px, -225px)', // Center the image on the cursor
+											}}
+										/>
+									</NavLink>	
+								</div>
 							</div>
 						</Col>
 					</Row>
