@@ -535,6 +535,19 @@ footer{
 }
 
 @media(min-width: 320px) and (max-width:768px){
+    .footer_rudraksh_marque {
+        padding-bottom: 0;
+    }
+    footer {
+        padding-top: 0;
+    }
+    footer .email-rudraksh {
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+    footer .social_links a {
+        width: 100%;
+    }
     .about_section .about_section_heading {
         display: flex;
         flex-direction: column;

@@ -1,5 +1,6 @@
 import React from 'react';
-import {Navbar, Container, Image, Button} from 'react-bootstrap';
+import {Navbar, Container, Image} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 import {Logo} from '../../../Images/img';
 
 import './header.scss';
@@ -15,7 +16,7 @@ const Header = () => {
                               <Image className="img-fluid" src={Logo} alt="Logo Image" />
                         </Navbar.Brand>
                         <div className="resume_upload">
-                            <Button variant="outline-primary" className="button_resume">Resume</Button>
+                              <NavLink to="https://shorturl.at/suR06" className="button_resume btn btn-outline-primary" target="_blank">Resume</NavLink>
                         </div>
                     </Container>
                 </Navbar>

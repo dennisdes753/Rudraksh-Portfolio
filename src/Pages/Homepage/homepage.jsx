@@ -644,7 +644,7 @@ const Homepage = () => {
 						</Col> 
 						<Col xxl="6" md="12" xs="12">
 							<div className="social_links">
-								<NavLink to="#">
+								<NavLink to="https://www.behance.net/rudrakshtifbcb" target="_blank">
 									Behance
 									<span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
@@ -659,7 +659,7 @@ const Homepage = () => {
 										</svg>
 									</span>
 								</NavLink>
-								<NavLink to="#">
+								<NavLink to="https://www.linkedin.com/in/rudraksh-tiwari-30a261211/" target="_blank">
 									LinkedIn
 									<span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
@@ -674,7 +674,7 @@ const Homepage = () => {
 										</svg>
 									</span>
 								</NavLink>
-								<NavLink to="#">
+								<NavLink to="https://www.instagram.com/rudrakshtiwari32/" target="_blank">
 									Instagram
 									<span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
