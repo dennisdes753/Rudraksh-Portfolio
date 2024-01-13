@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import { BannerImage, ProfilePic, ProjectImage, ProjectImage2, ProjectImage3, ProjectImage4, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe } from '../../Images/img';
+import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe } from '../../Images/img';
 import { useParallax } from 'react-scroll-parallax';
 import Header from '../Component/Header/header';
 import {NavLink} from 'react-router-dom';
@@ -21,7 +21,7 @@ const Homepage = () => {
 
 			// Calculate the maximum allowed positions for the image
 			const maxX = rect.width - 100; // Adjust based on your image width
-			const maxY = rect.height - 10; // Adjust based on your image height
+			const maxY = rect.height - 0; // Adjust based on your image height
 
 			// Update the mouse position only if it is within the boundaries
 			setMousePosition({
@@ -254,7 +254,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage1} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -288,7 +288,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage2} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage1} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -322,7 +322,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage3} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage1} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -356,7 +356,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage4} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage3} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -390,7 +390,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage4} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -424,7 +424,75 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage} alt="project-Image" />
+									<Image className="img-fluid" src={ProjectImage5} alt="project-Image" />
+								</div>
+							</div>
+							<div className="projects_view">
+								<div className="project_view_wrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="">
+										<g clip-path="url(#clip0_6_371)">
+											<path d="M27.7152 12.8129C29.5055 11.6363 30.6897 9.61049 30.6897 7.31354C30.6897 3.68758 27.7392 0.737793 24.1133 0.737793H12.8303C9.20438 0.737793 6.25391 3.68758 6.25391 7.31354C6.25391 9.61049 7.43808 11.6363 9.22841 12.8129C7.43808 13.9888 6.25391 16.0146 6.25391 18.3116C6.25391 20.6085 7.43808 22.6343 9.22841 23.8109C7.43808 24.9862 6.25391 27.0126 6.25391 29.3096C6.25391 32.9356 9.22017 35.8853 12.8654 35.8853C16.5504 35.8853 19.5489 32.9033 19.5489 29.2382V23.1739C20.7173 24.2386 22.2694 24.8873 23.9705 24.8873H24.1133C27.7392 24.8873 30.6897 21.9375 30.6897 18.3116C30.6897 16.0146 29.5055 13.9888 27.7152 12.8129ZM19.5489 2.89195H24.1133C26.5516 2.89195 28.5355 4.87518 28.5355 7.31354C28.5355 9.7519 26.5516 11.7358 24.1133 11.7358H19.5489V2.89195ZM8.40807 7.31354C8.40807 4.87518 10.392 2.89195 12.8303 2.89195H17.3947V11.7358H12.8303C10.392 11.7358 8.40807 9.7519 8.40807 7.31354ZM8.40807 18.3116C8.40807 15.8732 10.392 13.89 12.8303 13.89H17.3947V22.7338H12.8022C10.3769 22.7187 8.40807 20.7403 8.40807 18.3116ZM17.3947 29.2382C17.3947 31.7157 15.3628 33.7312 12.8654 33.7312C10.4078 33.7312 8.40807 31.748 8.40807 29.3096C8.40807 26.8712 10.392 24.8873 12.8303 24.8873H17.3947V29.2382ZM24.1133 22.7338H23.9705C21.5321 22.7338 19.5489 20.7499 19.5489 18.3116C19.5489 15.8732 21.5321 13.89 23.9705 13.89H24.1133C26.5516 13.89 28.5355 15.8732 28.5355 18.3116C28.5355 20.7499 26.5516 22.7338 24.1133 22.7338Z" fill="" />
+											<path d="M12.8309 22.7332C12.8213 22.7332 12.8123 22.7332 12.8027 22.7338H17.3953V22.7332H12.8309Z" fill="" />
+										</g>
+										<defs>
+											<clipPath id="clip0_6_371">
+												<rect width="35.1476" height="35.1476" fill="" transform="translate(0.896484 0.737793)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<hr className="horizontal-line"></hr>
+									<h4>E- Sign - E-Signature </h4>
+								</div>
+								<button className="btn btn-primary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="">
+										<g clip-path="url(#clip0_6_426)">
+											<path d="M10.6875 1.49622C7.74631 1.49622 5.39337 3.84916 5.39337 6.79033V9.14327C4.39337 9.14327 3.62866 9.90798 3.62866 10.908V18.555C3.62866 19.555 4.39337 20.3197 5.39337 20.3197H15.9816C16.9816 20.3197 17.7463 19.555 17.7463 18.555V10.908C17.7463 9.90798 16.9816 9.14327 15.9816 9.14327V6.79033C15.9816 3.84916 13.6287 1.49622 10.6875 1.49622ZM16.5698 10.908V18.555C16.5698 18.908 16.3345 19.1433 15.9816 19.1433H5.39337C5.04043 19.1433 4.80513 18.908 4.80513 18.555V10.908C4.80513 10.555 5.04043 10.3197 5.39337 10.3197H15.9816C16.3345 10.3197 16.5698 10.555 16.5698 10.908ZM6.56984 9.14327V6.79033C6.56984 4.49622 8.39337 2.67269 10.6875 2.67269C12.9816 2.67269 14.8051 4.49622 14.8051 6.79033V9.14327H6.56984Z" fill="" />
+											<path d="M10.6883 12.0845C9.68829 12.0845 8.92358 12.8492 8.92358 13.8492C8.92358 14.6139 9.39417 15.2609 10.1001 15.4962V16.7904C10.1001 17.1433 10.3353 17.3786 10.6883 17.3786C11.0412 17.3786 11.2765 17.1433 11.2765 16.7904V15.4962C11.9824 15.2609 12.453 14.6139 12.453 13.8492C12.453 12.8492 11.6883 12.0845 10.6883 12.0845ZM10.6883 14.4374C10.3353 14.4374 10.1001 14.2021 10.1001 13.8492C10.1001 13.4962 10.3353 13.2609 10.6883 13.2609C11.0412 13.2609 11.2765 13.4962 11.2765 13.8492C11.2765 14.2021 11.0412 14.4374 10.6883 14.4374Z" fill="" />
+										</g>
+										<defs>
+											<clipPath id="clip0_6_426">
+												<rect width="20" height="20" fill="" transform="translate(0.6875 0.907959)" />
+											</clipPath>
+										</defs>
+									</svg>
+									CONTACT FOR DETAIL
+								</button>
+								<div className="fml_project_img">
+									<Image className="img-fluid" src={ProjectImage3} alt="project-Image" />
+								</div>
+							</div>
+							<div className="projects_view">
+								<div className="project_view_wrap">
+									<svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="">
+										<g clip-path="url(#clip0_6_371)">
+											<path d="M27.7152 12.8129C29.5055 11.6363 30.6897 9.61049 30.6897 7.31354C30.6897 3.68758 27.7392 0.737793 24.1133 0.737793H12.8303C9.20438 0.737793 6.25391 3.68758 6.25391 7.31354C6.25391 9.61049 7.43808 11.6363 9.22841 12.8129C7.43808 13.9888 6.25391 16.0146 6.25391 18.3116C6.25391 20.6085 7.43808 22.6343 9.22841 23.8109C7.43808 24.9862 6.25391 27.0126 6.25391 29.3096C6.25391 32.9356 9.22017 35.8853 12.8654 35.8853C16.5504 35.8853 19.5489 32.9033 19.5489 29.2382V23.1739C20.7173 24.2386 22.2694 24.8873 23.9705 24.8873H24.1133C27.7392 24.8873 30.6897 21.9375 30.6897 18.3116C30.6897 16.0146 29.5055 13.9888 27.7152 12.8129ZM19.5489 2.89195H24.1133C26.5516 2.89195 28.5355 4.87518 28.5355 7.31354C28.5355 9.7519 26.5516 11.7358 24.1133 11.7358H19.5489V2.89195ZM8.40807 7.31354C8.40807 4.87518 10.392 2.89195 12.8303 2.89195H17.3947V11.7358H12.8303C10.392 11.7358 8.40807 9.7519 8.40807 7.31354ZM8.40807 18.3116C8.40807 15.8732 10.392 13.89 12.8303 13.89H17.3947V22.7338H12.8022C10.3769 22.7187 8.40807 20.7403 8.40807 18.3116ZM17.3947 29.2382C17.3947 31.7157 15.3628 33.7312 12.8654 33.7312C10.4078 33.7312 8.40807 31.748 8.40807 29.3096C8.40807 26.8712 10.392 24.8873 12.8303 24.8873H17.3947V29.2382ZM24.1133 22.7338H23.9705C21.5321 22.7338 19.5489 20.7499 19.5489 18.3116C19.5489 15.8732 21.5321 13.89 23.9705 13.89H24.1133C26.5516 13.89 28.5355 15.8732 28.5355 18.3116C28.5355 20.7499 26.5516 22.7338 24.1133 22.7338Z" fill="" />
+											<path d="M12.8309 22.7332C12.8213 22.7332 12.8123 22.7332 12.8027 22.7338H17.3953V22.7332H12.8309Z" fill="" />
+										</g>
+										<defs>
+											<clipPath id="clip0_6_371">
+												<rect width="35.1476" height="35.1476" fill="" transform="translate(0.896484 0.737793)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<hr className="horizontal-line"></hr>
+									<h4>Flying Freely  - tourism Website </h4>
+								</div>
+								<button className="btn btn-primary">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="">
+										<g clip-path="url(#clip0_6_426)">
+											<path d="M10.6875 1.49622C7.74631 1.49622 5.39337 3.84916 5.39337 6.79033V9.14327C4.39337 9.14327 3.62866 9.90798 3.62866 10.908V18.555C3.62866 19.555 4.39337 20.3197 5.39337 20.3197H15.9816C16.9816 20.3197 17.7463 19.555 17.7463 18.555V10.908C17.7463 9.90798 16.9816 9.14327 15.9816 9.14327V6.79033C15.9816 3.84916 13.6287 1.49622 10.6875 1.49622ZM16.5698 10.908V18.555C16.5698 18.908 16.3345 19.1433 15.9816 19.1433H5.39337C5.04043 19.1433 4.80513 18.908 4.80513 18.555V10.908C4.80513 10.555 5.04043 10.3197 5.39337 10.3197H15.9816C16.3345 10.3197 16.5698 10.555 16.5698 10.908ZM6.56984 9.14327V6.79033C6.56984 4.49622 8.39337 2.67269 10.6875 2.67269C12.9816 2.67269 14.8051 4.49622 14.8051 6.79033V9.14327H6.56984Z" fill="" />
+											<path d="M10.6883 12.0845C9.68829 12.0845 8.92358 12.8492 8.92358 13.8492C8.92358 14.6139 9.39417 15.2609 10.1001 15.4962V16.7904C10.1001 17.1433 10.3353 17.3786 10.6883 17.3786C11.0412 17.3786 11.2765 17.1433 11.2765 16.7904V15.4962C11.9824 15.2609 12.453 14.6139 12.453 13.8492C12.453 12.8492 11.6883 12.0845 10.6883 12.0845ZM10.6883 14.4374C10.3353 14.4374 10.1001 14.2021 10.1001 13.8492C10.1001 13.4962 10.3353 13.2609 10.6883 13.2609C11.0412 13.2609 11.2765 13.4962 11.2765 13.8492C11.2765 14.2021 11.0412 14.4374 10.6883 14.4374Z" fill="" />
+										</g>
+										<defs>
+											<clipPath id="clip0_6_426">
+												<rect width="20" height="20" fill="" transform="translate(0.6875 0.907959)" />
+											</clipPath>
+										</defs>
+									</svg>
+									CONTACT FOR DETAIL
+								</button>
+								<div className="fml_project_img">
+									<Image className="img-fluid" src={ProjectImage2} alt="project-Image" />
 								</div>
 							</div>
 						</Col>
@@ -531,7 +599,7 @@ const Homepage = () => {
 							<div className="catchme_text" style={{ position: 'relative'}}>
 								<h4>God Create Us To Make Life Easy. </h4>
 								<div className="cursor" onMouseMove={handleMouseMove} style={{width: '100%', height: '100%' }}>
-									<NavLink to="#">
+									<NavLink to="mailto:rudrakshti638@gmail.com" target="_blank">
 										<Image
 											className="img-fluid cursor_img"
 											src={CatchMe}
@@ -550,6 +618,97 @@ const Homepage = () => {
 					</Row>
 				</Container>
 			</section>
+
+			<section className="footer_rudraksh_marque">
+				<Container>
+					<Row>
+						<Col xxl="12" md="12" xs="12">
+							<div className="inner_content">
+								<h4>Rudraksh Tiwari</h4>
+								<h4>Rudraksh Tiwari</h4>
+								<h4>Rudraksh Tiwari</h4>
+								<h4>Rudraksh Tiwari</h4>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</section>
+
+			<footer>
+				<Container>
+					<Row>
+						<Col xxl="6" md="12" xs="12">
+							<div className="email-rudraksh">
+								<NavLink to="#">rudrakshti638@gmail.com</NavLink>
+							</div>
+						</Col> 
+						<Col xxl="6" md="12" xs="12">
+							<div className="social_links">
+								<NavLink to="#">
+									Behance
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
+											<g clip-path="url(#clip0_6_769)">
+												<path d="M35.2362 11.7488L24.6338 11.4577C24.2219 11.4144 23.8528 11.7132 23.8096 12.1252C23.7664 12.5371 24.0652 12.9062 24.4772 12.9494C24.5156 12.9534 24.5542 12.9545 24.5928 12.9526L33.3873 13.1994L11.8235 33.6106C11.5228 33.8953 11.5097 34.3701 11.7945 34.6709C12.0792 34.9717 12.5539 34.9847 12.8547 34.7L34.4185 14.2888L34.1771 23.0781C34.1339 23.4901 34.4327 23.8591 34.8447 23.9024C35.2566 23.9456 35.6256 23.6468 35.6689 23.2348C35.6729 23.1964 35.674 23.1577 35.672 23.1192L35.9632 12.5167C35.9733 12.1045 35.6485 11.7614 35.2362 11.7488Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_6_769">
+													<rect width="33" height="33" fill="white" transform="translate(0.449219 22.6851) rotate(-43.4271)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</NavLink>
+								<NavLink to="#">
+									LinkedIn
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
+											<g clip-path="url(#clip0_6_769)">
+												<path d="M35.2362 11.7488L24.6338 11.4577C24.2219 11.4144 23.8528 11.7132 23.8096 12.1252C23.7664 12.5371 24.0652 12.9062 24.4772 12.9494C24.5156 12.9534 24.5542 12.9545 24.5928 12.9526L33.3873 13.1994L11.8235 33.6106C11.5228 33.8953 11.5097 34.3701 11.7945 34.6709C12.0792 34.9717 12.5539 34.9847 12.8547 34.7L34.4185 14.2888L34.1771 23.0781C34.1339 23.4901 34.4327 23.8591 34.8447 23.9024C35.2566 23.9456 35.6256 23.6468 35.6689 23.2348C35.6729 23.1964 35.674 23.1577 35.672 23.1192L35.9632 12.5167C35.9733 12.1045 35.6485 11.7614 35.2362 11.7488Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_6_769">
+													<rect width="33" height="33" fill="white" transform="translate(0.449219 22.6851) rotate(-43.4271)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</NavLink>
+								<NavLink to="#">
+									Instagram
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
+											<g clip-path="url(#clip0_6_769)">
+												<path d="M35.2362 11.7488L24.6338 11.4577C24.2219 11.4144 23.8528 11.7132 23.8096 12.1252C23.7664 12.5371 24.0652 12.9062 24.4772 12.9494C24.5156 12.9534 24.5542 12.9545 24.5928 12.9526L33.3873 13.1994L11.8235 33.6106C11.5228 33.8953 11.5097 34.3701 11.7945 34.6709C12.0792 34.9717 12.5539 34.9847 12.8547 34.7L34.4185 14.2888L34.1771 23.0781C34.1339 23.4901 34.4327 23.8591 34.8447 23.9024C35.2566 23.9456 35.6256 23.6468 35.6689 23.2348C35.6729 23.1964 35.674 23.1577 35.672 23.1192L35.9632 12.5167C35.9733 12.1045 35.6485 11.7614 35.2362 11.7488Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_6_769">
+													<rect width="33" height="33" fill="white" transform="translate(0.449219 22.6851) rotate(-43.4271)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</NavLink>
+								<NavLink to="#">
+									Twitter
+									<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="48" height="47" viewBox="0 0 48 47" fill="none">
+											<g clip-path="url(#clip0_6_769)">
+												<path d="M35.2362 11.7488L24.6338 11.4577C24.2219 11.4144 23.8528 11.7132 23.8096 12.1252C23.7664 12.5371 24.0652 12.9062 24.4772 12.9494C24.5156 12.9534 24.5542 12.9545 24.5928 12.9526L33.3873 13.1994L11.8235 33.6106C11.5228 33.8953 11.5097 34.3701 11.7945 34.6709C12.0792 34.9717 12.5539 34.9847 12.8547 34.7L34.4185 14.2888L34.1771 23.0781C34.1339 23.4901 34.4327 23.8591 34.8447 23.9024C35.2566 23.9456 35.6256 23.6468 35.6689 23.2348C35.6729 23.1964 35.674 23.1577 35.672 23.1192L35.9632 12.5167C35.9733 12.1045 35.6485 11.7614 35.2362 11.7488Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_6_769">
+													<rect width="33" height="33" fill="white" transform="translate(0.449219 22.6851) rotate(-43.4271)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</NavLink>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</footer>
 
 		</>
 	)

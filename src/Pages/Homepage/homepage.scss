@@ -31,17 +31,22 @@
             margin-right: 100px;
             transition: all 0.4s ease-in-out;
         }
-            @keyframes a-text-scroll {
-                100% {
-                    transform: translate3d(-100%, 0, 0);
-                    transition: all 0.4s ease-in-out;
-                }
-    
-                0% {
-                    transform: translate3d(0%, 0, 0);
-                    transition: all 0.4s ease-in-out;
-                }
+        @keyframes a-text-scroll {
+            100% {
+                transform: translate3d(-100%, 0, 0);
+                transition: all 0.4s ease-in-out;
             }
+
+            50% {
+                transform: translate3d(-50%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+
+            0% {
+                transform: translate3d(0%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+        }
     }
 }
 
@@ -180,6 +185,11 @@
                 transition: all 0.4s ease-in-out;
             }
 
+            50% {
+                transform: translate3d(-50%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+
             0% {
                 transform: translate3d(0%, 0, 0);
                 transition: all 0.4s ease-in-out;
@@ -216,7 +226,7 @@
         .experience{
             h4{
                 font-size: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
             p{
                 font-size: 16px;
@@ -295,6 +305,12 @@
                 animation-iteration-count: 1;
                 animation-timing-function: ease-in;
                 animation-duration: 2.3s;
+                img{
+                    width: 100%;
+                    max-width: 404px;
+                    min-height: 303px;
+                    border-radius: 10px;
+                }
             }
             .project_view_wrap{
                 svg{
@@ -414,4 +430,176 @@
         }
         
     }    
+}
+
+.footer_rudraksh_marque{
+    width: 100%;
+    background-color: #E7E7E7;
+    padding-bottom: 50px;
+    .inner_content{
+        width: 100%;
+        min-height: 236px;
+        border-radius: 20px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        h4{
+            font-size: 150px;
+            font-family: 'Uncial Antiqua';
+            font-weight: 400;
+            white-space: nowrap;
+            transform: translateX(0);
+            animation: a-text-scroll 15s linear infinite;
+            margin-right: 100px;
+            transition: all 0.4s ease-in-out;
+        }
+        @keyframes a-text-scroll {
+            100% {
+                transform: translate3d(-100%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+
+            50% {
+                transform: translate3d(-50%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+            0% {
+                transform: translate3d(0%, 0, 0);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    background: #E7E7E7;
+    padding: 50px 0;
+    .email-rudraksh{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+    }
+    .social_links{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        a{
+            width: 48%;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width: 1023px){
+    .banner_sec .banner_sec_inner img {
+        height: auto;
+    }
+    .about_section .about_section_heading {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .about_section .about_section_heading .about_content .about_buttons a {
+        width: 100%;
+        min-width: 45%;
+        max-width: 45%;
+    }
+    .super_creative_section .experience_descipline {
+        gap: 60px;
+    }
+    span.industy_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .super_creative_section .experience_descipline .experience a {
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 320px) and (max-width:768px){
+    .about_section .about_section_heading {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about_section .about_section_heading .about_content .about_buttons a {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .super_creative_section .experience_descipline {
+        gap: 30px;
+        flex-direction: column;
+    }
+    span.industy_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .super_creative_section .experience_descipline .experience a {
+        margin-right: 0;
+    }
+    .super_creative_section .experience_descipline .experience h4 {
+        margin-bottom: 20px;
+    }
+    .super_creative_section .projects_view .project_view_wrap {
+        gap: 20px;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    .project_view_wrap svg {
+        display: none;
+    }
+    .project_view_wrap hr {
+        display: none;
+    }
+    .super_creative_section .projects_view {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .super_creative_section .projects_view .project_view_wrap h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .super_creative_section .projects_view button {
+        width: 100%;
+    }
+    .super_creative_section .projects_view .fml_project_img {
+        left: 8%;
+        top: -98px;
+        right: 23px;
+        z-index: 2;
+    }
+    .catchme .catchme_text h4 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+    .catchme .catchme_text {
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+    .banner_sec .banner_sec_inner img {
+        height: auto;
+    }
 }

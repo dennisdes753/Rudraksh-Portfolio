@@ -6,6 +6,7 @@ export { default as ProjectImage1 } from './projectImage2.png';
 export { default as ProjectImage2 } from './projectImage3.png';
 export { default as ProjectImage3 } from './projectImage4.png';
 export { default as ProjectImage4 } from './projectImage5.png';
+export { default as ProjectImage5 } from './projectImage6.png';
 export { default as FigmaBackground } from './figma_background.png';
 export { default as AdobeBackground } from './adobe-background.png';
 export { default as WebflowBackground } from './webflow_background.png';
