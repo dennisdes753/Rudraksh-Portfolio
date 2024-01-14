@@ -5,9 +5,7 @@ import './App.scss';
 function App() {
 	return (
 		<div className="App your-scroll-container" ref={ref}>
-			<ParallaxProvider scrollContainer={scrollEl}>
-				<Outlet/>
-			</ParallaxProvider>	
+			<Outlet/>
 		</div>
 	);
 }

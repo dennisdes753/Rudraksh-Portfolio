@@ -28,6 +28,7 @@ const Homepage = () => {
 
 	return (
 		<>
+			
 			<section className="banner_sec" style={{ backgroundImage: `url(${BannerImage})` }}>
 				<Header/>
 				<Container>
@@ -45,7 +46,7 @@ const Homepage = () => {
 					</Row>
 				</Container>
 			</section>
-
+				
 			<section className="about_section">
 				<Container>
 					<Row>
