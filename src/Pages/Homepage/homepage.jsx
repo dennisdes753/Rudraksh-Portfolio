@@ -1,17 +1,12 @@
 import React, {useState} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe } from '../../Images/img';
-import { useParallax } from 'react-scroll-parallax';
 import Header from '../Component/Header/header';
 import {NavLink} from 'react-router-dom';
 
 import './homepage.scss';
 
 const Homepage = () => {
-	const parallax = useParallax({
-		speed: -10,
-	});
-
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	const handleMouseMove = (e) => {
 		const catchMeDiv = document.querySelector('.catchme_text');
@@ -33,7 +28,7 @@ const Homepage = () => {
 
 	return (
 		<>
-			<section ref={parallax.ref} className="banner_sec" style={{ backgroundImage: `url(${BannerImage})` }}>
+			<section className="banner_sec" style={{ backgroundImage: `url(${BannerImage})` }}>
 				<Header/>
 				<Container>
 					<Row>
@@ -639,7 +634,7 @@ const Homepage = () => {
 					<Row>
 						<Col xxl="6" md="12" xs="12">
 							<div className="email-rudraksh">
-								<NavLink to="#">rudrakshti638@gmail.com</NavLink>
+								<NavLink to="mailto:rudrakshti638@gmail.com" target="_blank">rudrakshti638@gmail.com</NavLink>
 							</div>
 						</Col> 
 						<Col xxl="6" md="12" xs="12">
