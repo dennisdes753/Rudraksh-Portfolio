@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe, FramerBackground, FramerIcon, AllInBets, Affice } from '../../Images/img';
+import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe, FramerBackground, FramerIcon, AllInBets, Affice, FractionEstate } from '../../Images/img';
 import Header from '../Component/Header/header';
 import {NavLink} from 'react-router-dom';
 
@@ -250,7 +250,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage1} alt="project-Image" />
+									<Image className="img-fluid" src={FractionEstate} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">

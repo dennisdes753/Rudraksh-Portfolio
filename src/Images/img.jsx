@@ -16,3 +16,4 @@ export { default as CatchMe } from './catchme_img.png';
 export { default as FramerIcon } from './framer_icon.png';
 export { default as AllInBets } from './All in bets.jpg';
 export { default as Affice } from './Affice.jpg';
+export { default as FractionEstate } from './fraction-estate.jpg';
