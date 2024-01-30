@@ -11,4 +11,8 @@ export { default as FigmaBackground } from './figma_background.png';
 export { default as AdobeBackground } from './adobe-background.png';
 export { default as WebflowBackground } from './webflow_background.png';
 export { default as SketchBackground } from './sketch_background.png';
+export { default as FramerBackground } from './franer.png';
 export { default as CatchMe } from './catchme_img.png';
+export { default as FramerIcon } from './framer_icon.png';
+export { default as AllInBets } from './All in bets.jpg';
+export { default as Affice } from './Affice.jpg';

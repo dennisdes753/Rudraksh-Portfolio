@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe } from '../../Images/img';
+import { BannerImage, ProfilePic, ProjectImage, ProjectImage1, ProjectImage2, ProjectImage3, ProjectImage4, ProjectImage5, FigmaBackground, AdobeBackground, SketchBackground, WebflowBackground, CatchMe, FramerBackground, FramerIcon, AllInBets, Affice } from '../../Images/img';
 import Header from '../Component/Header/header';
 import {NavLink} from 'react-router-dom';
 
@@ -284,7 +284,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage1} alt="project-Image" />
+									<Image className="img-fluid" src={AllInBets} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -352,7 +352,7 @@ const Homepage = () => {
 									CONTACT FOR DETAIL
 								</button>
 								<div className="fml_project_img">
-									<Image className="img-fluid" src={ProjectImage3} alt="project-Image" />
+									<Image className="img-fluid" src={Affice} alt="project-Image" />
 								</div>
 							</div>
 							<div className="projects_view">
@@ -562,18 +562,9 @@ const Homepage = () => {
 							</div>
 						</Col>
 						<Col xxl="4" lg="6" md="12" xs="12">
-							<div className="figma webflow" style={{ backgroundImage: `url(${WebflowBackground})` }}>
-								<svg xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152" fill="none">
-									<g clip-path="url(#clip0_6_803)">
-										<path d="M62.4439 7.88031C62.1577 7.44578 61.7683 7.08901 61.3104 6.84195C60.8525 6.5949 60.3405 6.46527 59.8203 6.46468H3.19525C1.45786 6.46468 0.0493164 7.87323 0.0493164 9.61061V141.736C0.0493164 142.57 0.380731 143.37 0.970652 143.96C1.56057 144.55 2.36068 144.881 3.19495 144.881C4.44985 144.886 5.58706 144.144 6.08902 142.994L62.714 10.8687C62.9216 10.3876 63.0056 9.86214 62.9584 9.34023C62.9112 8.81831 62.7344 8.31647 62.4439 7.88031ZM78.4623 55.6152C78.227 55.0354 77.8242 54.5389 77.3053 54.1893C76.7864 53.8396 76.175 53.6526 75.5493 53.6522C74.93 53.652 74.3245 53.8346 73.8085 54.1771C73.2925 54.5195 72.8891 55.0067 72.6488 55.5774L47.4822 115.348C46.808 116.95 47.5598 118.794 49.1609 119.468C49.5475 119.631 49.9631 119.715 50.3825 119.715H73.366L82.0423 142.843C82.2676 143.442 82.6701 143.958 83.1962 144.322C83.7223 144.686 84.3469 144.882 84.9868 144.882H110.153C111.891 144.88 113.298 143.471 113.297 141.734C113.297 141.329 113.219 140.928 113.066 140.553L78.4623 55.6152ZM147.903 6.46468H91.2784C89.541 6.45849 88.1277 7.86202 88.1215 9.59941C88.12 10.0361 88.2094 10.4684 88.384 10.8687L145.009 142.994C145.255 143.556 145.659 144.035 146.174 144.37C146.688 144.706 147.289 144.883 147.903 144.881C148.114 144.881 148.325 144.86 148.532 144.818C149.243 144.673 149.881 144.287 150.34 143.726C150.798 143.164 151.049 142.461 151.049 141.736V9.61061C151.049 7.87323 149.641 6.46468 147.903 6.46468Z" fill="#F44336" />
-									</g>
-									<defs>
-										<clipPath id="clip0_6_803">
-											<rect width="151" height="151" fill="white" transform="translate(0.0493164 0.173096)" />
-										</clipPath>
-									</defs>
-								</svg>
-								<h4>Adobe</h4>
+							<div className="figma framer" style={{ backgroundImage: `url(${FramerBackground})` }}>
+								<Image className="img-fluid" src={FramerIcon} alt="Framer-Logo"/>
+								<h4>Framer</h4>
 							</div>
 						</Col>
 						<Col xxl="4" lg="6" md="12" xs="12">
