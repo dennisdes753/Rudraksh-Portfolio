@@ -16,7 +16,7 @@ const Header = () => {
                               <Image className="img-fluid" src={Logo} alt="Logo Image" />
                         </Navbar.Brand>
                         <div className="resume_upload">
-                              <NavLink to="https://shorturl.at/suR06" className="button_resume btn btn-outline-primary" target="_blank">Resume</NavLink>
+                              <NavLink to="https://drive.google.com/drive/folders/1AC9wgoXhywxsYLVlTUHA6fsyXqWG0y3P" className="button_resume btn btn-outline-primary" target="_blank">Resume</NavLink>
                         </div>
                     </Container>
                 </Navbar>
